@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    body,html,#root,.app,{
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        padding: 1%;
+        box-sizing: border-box;
+    }
+.wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    nav{
+        width: 100%;
+        height: 44px;
+        background: #2b5295;
+        display: flex;
+        padding: 0 10px;
+        box-sizing: border-box;
+        align-items: center;
+    .img{  
+            width: 93px;
+            img{
+                width: 80%;
+            }
+        }
+        .list{
+            display: flex;
+            margin-left: 93px;
+            height: 100%;
+            align-items: center;
+            a{
+                color:#fff;
+                padding: 0 20px;
+                line-height: 44px;
+                text-decoration: none;
+                &.active{
+                    background: #1e3d73;
+                }
+            }
+        }
+    }
+    section{
+        width: 100%;
+        flex: 1;
+        .home{
+            width: 100%;
+            height: 100%;
+            background: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            .home-left{
+                width: 21.7%;
+                padding-top:5%;
+                box-sizing: border-box;
+                .home-img{
+                    width: 100%;
+                    text-align: center;
+                    img{
+                        width: 50%;
+                    }
+                }
+                .home-user{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    p{
+                        line-height: 1.5em;
+                    }
+                   .p{
+                    margin-left: 35%;
+                      text-align: left;
+                   }
+                }
+            }
+            .home-right{
+                flex: 1;
+                background: #fff;
+            }
+        }
+        .management{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            .management-list{
+                width: 15%;
+                background: #c5cfea;
+                text-align: left;
+                a{
+                    width: 100%;
+                    display: block;
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    padding: 20px 10px;
+                    border-left:4px solid rgba(0,0,0,0);
+                    background: #c5cfea;
+                    color: #334b7b;
+                    &.aactive{
+                        color:#0057ff;
+                        border-left:4px solid #0057ff;
+                        background: #aebcdf;
+                    }
+                }
+            }
+            .management-con{
+                flex: 1;
+                background: #f7f7f7;
+            }
+        }
+       
+    }
+}
